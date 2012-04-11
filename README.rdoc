@@ -25,3 +25,6 @@ A personal assistant web app aka my first Ruby adventure.
 1. Ruby on Rails <http://rubyonrails.org/>
 2. "OFX for Ruby" fork <https://github.com/baconpat/ofx_for_ruby>
 3. MySQL <http://www.mysql.com/>
+
+== Reference Information
+OFX connection list <http://moneydance.com/synch/moneydance/fi2004.dict>
