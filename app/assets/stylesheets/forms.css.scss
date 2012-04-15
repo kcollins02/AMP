@@ -1,0 +1,36 @@
+/*
+    Document   : forms.css
+    Created on : Apr 14, 2012, 9:39:26 PM
+    Author     : kevin
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/*
+   TODO customize this sample style
+   Syntax recommendation http://sass-lang.com/docs/yardoc/file.SASS_REFERENCE.html
+*/
+
+#loginForm, #registerForm{
+    width: 255px;
+    margin: 20px auto;
+    padding-left: 210px;
+    background: image-url("assistant.jpg") no-repeat;
+    min-height: 380px;
+    h1, h2, h3{
+        margin-bottom: 10px;
+    }
+    p{
+        margin: 0;
+    }
+    .theForm{
+        text-align: center;
+        margin: 10px 0;
+        label{
+            font-weight: bold;
+        }
+        .field{
+            margin-bottom: 10px;
+        }
+    }
+}

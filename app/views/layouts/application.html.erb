@@ -7,19 +7,26 @@
   <%= csrf_meta_tag %>
 </head>
 <body>
-
-    <div id="nav">
-        <% if current_user %>
-        <%= link_to "Edit Profile", edit_user_path(current_user.id)%>
-        <%= link_to "Logout", :logout%>
-        <% else %>
-        <%= link_to "Register", new_user_path%> |
-        <%= link_to "Login", :login %>
-        <% end %>
+  <div id="container">
+    <div id="header">
+      <h1><a href="/">AMP</a></h1>
+      <h2>My Personal Assistant, redefined</h2>
     </div>
-
-
-<%= yield %>
-
+    <div id="content">
+      <div id="nav">
+          <% if current_user %>
+          <%= link_to "Edit Profile", edit_user_path(current_user.id)%>
+          <%= link_to "Logout", :logout%>
+          <% else %>
+          <%= link_to "Register", :register%> |
+          <%= link_to "Login", :login %>
+          <% end %>
+      </div>
+      <%= yield %>
+    </div>
+    <div id="footer">
+      <p>footer content</p>
+    </div>
+  </div>
 </body>
 </html>
