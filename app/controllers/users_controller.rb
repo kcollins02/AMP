@@ -1,6 +1,9 @@
 class UsersController < ApplicationController
   # GET /users
   # GET /users.json
+
+  skip_before_filter :authenticate, :only => [:new, :create, :update]
+
   def index
     @users = User.all
 

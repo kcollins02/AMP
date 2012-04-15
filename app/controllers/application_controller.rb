@@ -1,9 +1,16 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
-
+  
+  before_filter :authenticate
   helper_method :current_user
 
   private
+
+  def authenticate
+    unless current_user
+      redirect_to :login
+    end
+  end
 
   def current_user_session
     return @current_user_session if defined?(@current_user_session)
