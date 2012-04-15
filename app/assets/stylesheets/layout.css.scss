@@ -32,7 +32,22 @@ body{
         padding: 0 0 0 20px;
     }
 }
+#container{
+    position: relative;
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    margin: 0 auto -80px;
+ }
+#container .push, #footer{
+    height: 80px;
+ }
 #footer{
-    padding: 15px;
+    position: relative;
+    width: 1000px;
+    margin: 0 auto;
     background: #435E69;
+    .container{
+        padding: 15px;
+    }
 }

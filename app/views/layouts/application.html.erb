@@ -2,7 +2,7 @@
 <html>
 <head>
   <title>Assistant</title>
-  <%= stylesheet_link_tag :all %>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
   <%= javascript_include_tag :defaults %>
   <%= csrf_meta_tag %>
 </head>
@@ -24,7 +24,10 @@
       </div>
       <%= yield %>
     </div>
-    <div id="footer">
+    <div class="push"></div>
+  </div>
+  <div id="footer">
+    <div class="container">
       <p>footer content</p>
     </div>
   </div>
